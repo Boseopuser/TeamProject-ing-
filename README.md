@@ -24,15 +24,33 @@
 - Spring Tools 3 Add-On for Spring Tools 4 (3.9.22.RELEASE)
 
 # 여행시그널 커뮤니티 - 팀프로젝트 ing ~
+  - 갤러리형 이미지 게시판 구현 목적 
+  - 현재 로그인,로그아웃,회원가입 / 여행후기게시판 CRUD 구현 완료 
+  - 로그인 중복체크 및 패스워드 암호화 작업중 
+  - 파일업로드를 통한 갤러리형 이미지 게시판 제작중 
 
 # MainPage
+  - 제작중 ing ~
+  - 스와이프 제외 및 갤러리형 이미지 게시판으로 구현 목표 
 
 # Login , Logout , Join
+  - ID 중복체크 test ing ~
+  - Password 암호화 ing ~
 
 # Board CRUD 
+  - CRUD 구현 완료 
+  - 파일업로드 ing ~ 
+  - 갤러리형 게시판 
+  
+# 댓글 CRUD 
 
 # API 
+  - 네이버 , 카카오톡 소셜간편로그인 API 연동 
   
 # 오류 및 에러 에피소드 
+  - 부적합한 열 유형: 1111
+  - DataBase Null 값 
+  - 400 , 404 , 500
   
 # 문제해결
+  - 
