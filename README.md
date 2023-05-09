@@ -37,10 +37,12 @@
   - ID 중복체크 test ing ~
   - Password 암호화 ing ~
 
-# Board CRUD 
+# BoardReview CRUD 
   - CRUD 구현 완료 
   - 파일업로드 ing ~ 
-  - 갤러리형 게시판 
+  - 갤러리형 게시판
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/788cb306-94bf-4e06-9e78-2cd0fa21b295)
+
   
 # 댓글 CRUD 
 
