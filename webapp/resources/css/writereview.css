@@ -1,0 +1,244 @@
+@charset "utf8";
+
+/* css 초기화 */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+.container {
+    width: 70%;
+    margin: 20px auto;
+
+}
+
+
+#imagePreview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  #imagePreview img {
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* 사진 첨부 버튼 */
+  .file-upload-btn {
+    display: inline-block;
+    background-color: #e4e3e3;
+    color: rgb(85, 84, 84);
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px auto;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0px 0px 2px #969696;
+  }
+  
+  .file-upload-btn:hover {
+    background-color: #2B65F8;
+    color: white;
+  }
+  
+  .file-upload-btn i {
+    margin-right: 5px;
+  }
+
+  /* 원래의 첨부버튼을 안보이게끔 */
+  #imageUpload {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  /* 사진 미리보기 영역 */
+  .preview-container {
+    /* border: 2px solid #ccc; */
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 0px 5px #c0bebe;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 320px;
+    background-color: #EFF2F6;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .preview-container img {
+    display: inline-block;
+    height: 100%;
+  }
+  
+ h1 {
+  font-size: 30px;
+  margin: 20px auto;
+  
+ }
+
+
+
+  /* 태그 입력란 */
+  .tag-box {
+    position: relative; 
+    /* border: 1px solid #ccc; */
+    margin: 0px auto;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    text-align: center;
+    box-shadow: 0px 0px 5px #c0bebe;
+}
+
+  .areatag-box {
+    position: absolute;
+    margin: 0px auto;
+    top: 20px;
+    
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+  .customtag-box {
+    position: absolute;
+    margin: 0px auto;
+    bottom: 20px;
+    
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  
+  span {
+    color: #5e5e5e;
+    font-size: 13px;
+
+  }
+
+
+  /* .areatag {
+    height: 30px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px auto;
+  } */
+
+
+  /* .customtag {
+    height: 30px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px auto;
+  } */
+
+
+
+
+
+  /* 제목 */
+  .title {
+    width: 100%;
+    height: 30px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 15px auto;
+    box-shadow: 0px 0px 2px #d2d2d2;
+  }
+
+  /* 내용 쓰기 */
+  .content {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: left;
+    box-shadow: 0px 0px 2px #d2d2d2;
+  }
+
+    /* 제목,내용 클릭시 보더라인 색깔 변경*/
+    .title:focus {
+      border-color:#2B65F8;
+      outline: none;
+  }
+    textarea:focus {
+    border-color:#2B65F8;
+    outline: none;
+  }
+  
+
+
+  /* 작성 완료 버튼 */
+
+  .submit_button {
+    position: relative;
+  }
+
+
+  .submitbtn {
+      margin: 60px auto;
+      height: 50px;
+      width: 240px;
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      background-color: #2B65F8;
+      border: none;
+      box-shadow: 0px 0px 2px #d2d2d2;
+      border-radius: 30px;
+      cursor: pointer;
+      position: absolute;
+      /* bottom: -3px; */
+      left: 50%;
+      transform: translate(-50%, 0%);
+
+  }
+
+  .submitbtn:hover {
+    /* background-color: #2b65f871; */
+    background-color: #5e8cff;
+  }
+
+
+
+
+
+  /* 새로고침버튼 -> 폼태그에선 작동을 안함ㅠㅠ */
+
+  /* #refreshBtn {
+    background-color: #bebdbd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #refreshBtn:hover {
+    background-color: #dbdada;
+  } */

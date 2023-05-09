@@ -1,0 +1,342 @@
+@charset "utf8";
+
+/* main */
+main {
+  height: fit-content;
+}
+
+/*** wrap style ***/
+/* 전체 풀 스크린 레이아웃 */
+.wrap {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 제목 */
+.wrap h1 {
+  font-weight: bold;
+  font-size: 1.7rem;
+  font-family: "orbitron";
+
+  color: var(--color-dark-gray);
+  letter-spacing: 1px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+/* 자동 재생 버튼 */
+.wrap .auto {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  z-index: 20px;
+}
+.wrap .auto li {
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+  color: var(--color-dark-gray);
+  font-size: 20px;
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+.wrap .auto li:hover { /* 마우스 호버 시 진해지면서 1.4배 확대 */
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+/* 기본 슬라이드 프레임 */
+.wrap .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.wrap .swiper-wrapper .swiper-slide {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  top: 50%;
+  margin-top: -230px;
+}
+.wrap .swiper-wrapper .swiper-slide .inner {
+  width: 100%;
+  height: 100%;
+  background: var(--color-gray);
+  padding: 30px;
+  opacity: 0.4;
+  transition: 1s;
+}
+/* 좌우 버튼 */
+.wrap .swiper-button-prev {
+  left: auto; /* 기존 left 값 초기화*/
+  right: 100px;
+  top: auto;
+  bottom: 50px;
+  filter: grayscale(100%) brightness(3); /* 버튼 색을 흰색으로 변경 */
+  transform: scale(0.5);
+}
+.wrap .swiper-button-next {
+  left: auto; /* 기존 left 값 초기화 */
+  right: 60px;
+  top: auto;
+  bottom: 50px;
+  filter: grayscale(100%) brightness(3); /* 버튼 색을 흰색으로 변경 */
+  transform: scale(0.5);
+}
+
+/* 페이지네이션 */
+.swiper-pagination-fraction {
+  bottom: auto; /* 기존 bottom 값 초기화 */
+  top: 50px; 
+  left: auto; /* 기존 left 값 초기화 */
+  right: 50px;
+  width: auto; /* 기존 width 값 초기화 */
+  font-size: 16px;
+  font-family: "orbitron";
+  letter-spacing: 1px;
+  color: var(--color-dark-gray);
+}
+.swiper-pagination-fraction span:nth-of-type(1) {
+  font-size: 30px;
+  color: var(--color-dark-gray);
+}
+
+.wrap .swiper-wrapper .swiper-slide-active .inner {
+  opacity: 1;
+  box-shadow: 0px 0px 50px rgba(255,255,255,0.8);
+  /* 가운데 패널을 강조
+  흰 색의 투명도를 불투명하게 바꾸고, 
+  흰 그림자를 집어넣어 빛이 나는 듯한 효과를 줌. */
+}
+.wrap .swiper-wrapper .swiper-slide .inner::before,
+.wrap .swiper-wrapper .swiper-slide .inner::after {
+  /* 좌우 패널 */
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  background: var(--color-gray);
+}
+.wrap .swiper-wrapper .swiper-slide-prev .inner,
+.wrap .swiper-wrapper .swiper-slide-next .inner {
+  opacity: 0.7;
+}
+@keyframes ani {
+  0% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  1% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.1;
+    transform: scale(1.4);
+  }
+}
+.wrap .swiper-wrapper .swiper-slide-active .inner::before {
+  animation: ani 1s ease 1;
+}
+.wrap .swiper-wrapper .swiper-slide-active .inner::after {
+  animation: ani 0.3s ease 1;
+}
+.wrap .swiper-wrapper .swiper-slide .inner .con {
+  position: relative;
+  z-index: 10;
+}
+.wrap .swiper-wrapper .swiper-slide .inner .con img {
+  margin: 0 auto;
+  width: 100%;
+  transition: filter 2s;
+}
+
+main hr:nth-of-type(1) {
+  border: 1px solid var(--color-light-gray)
+}
+
+/* wrap-2 style */
+.place {
+  height: fit-content;
+}
+
+.place-menu {
+  height: 3rem;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.place-menu div {
+  display: flex;
+  align-items: end;
+}
+
+.place-menu img {
+  width: 100px;
+}
+
+.place-menu strong {
+  margin: 0px 0.4rem 0.6rem;
+}
+
+.plusBtn {
+  width: 100px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: grey;
+}
+
+.place-main {
+  height: 400px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  margin: 0px 4px;
+}
+/* ------------------------------------------------------ */
+.main-pic img {
+  width: 300px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2px 0px;
+}
+
+.main-title a div {
+  font-weight: bold;
+}
+
+.main-title a div:not(:first-of-type) {
+  border-radius: 0.5rem;
+  padding: 4px 8px;
+
+  background-color: rgb(199, 239, 255);
+  color: darkblue;
+}
+
+.place-location {
+  margin-top: 4px;
+}
+
+.place-location strong {
+  border-radius: 0.5rem;
+  padding: 4px 8px;
+  background-color: rgb(199, 239, 255);
+  color: darkblue;
+}
+
+.content {
+  background-color: rgb(199, 239, 255);
+  color: darkblue;
+  border-radius: 0.5rem;
+  padding: 4px 2px;
+  margin-bottom: 4px;
+}
+
+.main-name {
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+}
+
+.main-name strong span {
+  vertical-align: middle; 
+  font-size: 1.7rem;;
+}
+
+.profile-img {
+  background-position: center;
+  
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  
+  overflow: hidden;
+  user-select: none;
+}
+
+.profile-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-name {
+  margin-left: 0.4rem;
+}
+/* ------------------------------------------------------ */
+.middle-content a {
+  padding-left: 30px;
+}
+
+.middle {
+  height: fit-content;
+}
+
+/* middle */
+.middle-menu {
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle-menu img {
+  width: 100px;
+}
+
+.middle-content {
+  position: relative;
+  height: 450px;
+  border-top: 1px dotted;
+  border-bottom: 1px solid rgb(208, 207, 207);
+  padding: 0px 2rem;
+}
+
+.middle-content > ul li {
+  width: 1100px;
+  height: 50px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-bottom: 1px solid rgb(208, 207, 207);
+
+  display: flex;
+  align-items: center;
+
+  font-size: 20px;
+}
+
+.middle-content ul li span {
+  color: #4663e7;
+}

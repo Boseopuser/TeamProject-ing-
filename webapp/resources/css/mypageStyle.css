@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+html {
+    font-size: 10px;
+}
+
+#wrap{
+    width: 1000px;
+    margin: 100px auto;
+    font-size: 0;
+}
+
+#wrap > .wrap_title{
+    margin-bottom: 20px;
+}
+.wrap_title>h2>strong{
+    font-size: 2.5rem;
+}
+
+/* ---------------------------------------- */
+
+#container {
+    width : 100%;
+    box-sizing: border-box;
+}
+#container ul {
+    text-align: center;
+}
+
+/* 글자가 아니라 블록을 클릭 가능하세 하려면? */
+#container ul li {
+   display: inline-block;
+    width: 16%;
+    height: 40px;
+    margin: 0;
+    font-size: 1.5rem;
+}
+#container ul li:nth-of-type(1) {
+    width: 20%;
+}
+
+/* ============ tabs-1 ============= */
+
+
+#tabs-1 .myprofile {
+    width: 98%;
+    overflow: hidden;
+    display: flex;
+}
+
+#tabs-1 .myprofile .profile_left{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    float: left;
+    width: 40%;
+    height: auto;
+  }
+
+#tabs-1 .myprofile .profile_left > .img_container {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+#tabs-1 .myprofile .profile_left  .img_container > .img_contents {
+    text-align: center;
+    vertical-align: middle;
+    height: auto;
+
+}
+
+
+#tabs-1 .myprofile .profile_left > .img_container > label::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/kakao.png") ;
+    display: inline-block;
+    background-size: cover;
+    position: absolute;
+    /* vertical-align: top; */
+    top: 80%;
+    left: 80%;
+}
+
+#tabs-1 .myprofile .profile_right {
+    float: right;
+    width: 58%;
+  
+}
+
+#tabs-1 .myprofile .profile_right div {
+   width:100%;
+   padding-top: 7px;
+   padding-bottom: 7px;
+}
+
+#tabs-1 .myprofile .profile_right div div {
+    display: inline-block; 
+}
+
+#tabs-1 .myprofile .profile_right div .right_top {
+    width:25%;
+    font-size: 2rem;
+    color: black;
+    vertical-align: middle;
+}
+
+#tabs-1 .myprofile .profile_right div .right_contents {
+    width:fit-content;
+    font-size: 1.6rem;
+    vertical-align: middle;
+    color: blue;
+}
+
+
+
+
+/* ============ tabs-2 ============= */
+
+
+#tabs-2 .board_list .top div{
+    width: 24.5%;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#tabs-2 .board_list .post div div {
+    width: 24.5%;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#tabs-2 .board_list .post div .title{
+    width: 24.5%;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+/* #tabs-2 .board_list .post div div > a{
+    width: 24.5%;
+    
+} */
+
+
+
+/* ========== tabs-3 =========== */
+
+#tabs-3 .board_list .top div{
+    width: 15.5%;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15px;
+}
+#tabs-3 .board_list .top .title{
+    width: 20%;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#tabs-3 .board_list .post div div {
+    width: 15.5%;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+#tabs-3 .board_list .post div .title{
+    width: 20%;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+
+/* ========== tabs-4 =========== */
+
+#tabs-4 .wish_list .top div{
+    width: 15.5%;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#tabs-4 .wish_list .top .title{
+    width: 20%;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#tabs-4 .wish_list .post div div {
+    width: 15.5%;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#tabs-4 .wish_list .post div .title{
+    width: 20%;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* ========== tabs-5 =========== */
+
+#tabs-5 .like_list .top div{
+    width: 25%;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#tabs-5 .like_list .top .title{
+    width: 48%;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+#tabs-5 .like_list .post div div {
+    width: 25%;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#tabs-5 .like_list .post div .title{
+    width: 48%;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* ========== tabs-6 =========== */
+
+#tabs-6 form label {
+    display: inline-block;
+    width: 25%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#tabs-6 input {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+
+/* =========== paging =========== */
+.board_page {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+.board_page a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    border:1px solid #ddd;
+    border-left: 0;
+    vertical-align: middle;
+    line-height: 100%;
+}
+
+.board_page a.bt {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    letter-spacing: -10px;
+}
+
+.board_page a.num {
+    padding-top: 9px;
+    font-size: 1.4rem;
+}
+.board_page a:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.board_page {
+    margin-bottom: 30px;
+}
+

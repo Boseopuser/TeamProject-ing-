@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zerock.myapp.mapper.ReviewMapper">
+
+    <insert id="insert" parameterType="org.zerock.myapp.domain.ReviewDTO">
+        <selectKey keyProperty="postno" order="AFTER" resultType="int">
+            SELECT "ISEQ$$_74521".CURRVAL FROM dual
+        </selectKey>
+        INSERT INTO TBL_REVIEWBOARD ( nickname, title, content, views, likes)
+      <!-- VALUES ( #{nickname}, #{title}, #{content}, #{views,jdbcType=VARCHAR}, #{likes,jdbcType=VARCHAR}) -->
+        VALUES ( #{nickname}, #{title}, #{content}, #{views,jdbcType=VARCHAR}, #{likes,jdbcType=VARCHAR})
+    </insert>
+
+    <select id="select" parameterType="int" resultType="org.zerock.myapp.domain.ReviewVO">
+        SELECT postno, nickname, title, content, views, likes, regidate, modifydate
+        FROM TBL_REVIEWBOARD
+        WHERE postno = #{postno}
+    </select>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM TBL_REVIEWBOARD
+        WHERE postno = #{postno}
+    </delete>
+
+    <update id="update" parameterType="org.zerock.myapp.domain.ReviewDTO">
+        UPDATE TBL_REVIEWBOARD
+        SET 
+            nickname=#{nickname,jdbcType=VARCHAR},
+            title = #{title,jdbcType=VARCHAR},
+            content=#{content,jdbcType=VARCHAR},
+            views=#{views,jdbcType=NUMERIC},
+            likes=#{likes,jdbcType=NUMERIC},
+            modifydate=current_date
+        WHERE postno = #{postno}
+    </update>
+
+    <select id="selectList" parameterType="org.zerock.myapp.domain.Criteria" resultType="org.zerock.myapp.domain.ReviewDTO">
+        SELECT postno, nickname, title, content, views, likes, regidate, modifydate
+        FROM TBL_REVIEWBOARD
+        ORDER BY postno DESC
+        OFFSET (#{currPage} - 1) * #{PagesPerPage} ROWS
+        FETCH NEXT #{PagesPerPage} ROWS ONLY
+    </select>
+
+</mapper>

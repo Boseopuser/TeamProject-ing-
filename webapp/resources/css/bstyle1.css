@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+ui, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.board_title {
+    margin-bottom: 30px;
+}
+
+/* rem : 최상위 값 * 3 */
+.board_title strong {
+    font-size: 3rem;
+}
+
+.bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    /* font-size=0, 버튼 가운데 여백이 사라짐 */
+    font-size: 0;
+}
+
+.bt_wrap button {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    /* 상,하,좌,우 여백은 10px */
+    padding: 10px; 
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background: #2B65F8;
+    color: #fff;
+}
+
+/* margin-left 10px을 주면 전체적으로 오른쪽으로 밀림
+   목록버튼은 자리 유지 */
+.bt_wrap button:first-child {
+    margin-left: 0;
+}
+
+.board_list {
+    width: 100%;
+    border-top: 1px solid #000 ;
+}
+
+.board_list > div {
+    border-bottom: 1px solid rgb(208, 207, 207);
+    font-size: 0;
+}
+
+.board_list > div.top {
+    border-bottom: 2px solid rgb(208, 207, 207);
+}
+
+.board_list > div:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.board_list > div > div {
+    display: inline-block;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 15px;
+    padding-left: 0;
+    /* 세로 맞춤 */
+    vertical-align: middle;
+    font-size: 1.4rem;
+    text-align: center;
+} 
+
+.board_list > div:hover {
+    color: #2B65F8;
+}
+
+.board_list .num {
+    width: 10%;
+}
+
+.board_list .title {
+    width: 50%;
+    text-align: left;
+}
+
+.board_list .top .title {
+    text-align: center;
+}
+
+.board_list .writer {
+    width: 20%;
+}
+
+.board_list .date {
+    width: 10%;
+}
+
+.board_list .count {
+    width: 10%;
+}
+
+.board_page {
+    /* 위로 여백 떨어짐 */
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.board_page a {
+    display: inline-block;
+    width: 32px;
+    height: 35px;
+    /* height 값 안에 있어라 */
+    box-sizing: border-box;
+    border: 1px solid rgb(208, 207, 207) ;
+    border-left: 0;
+    vertical-align: middle;
+    /* line-height : 줄 높이 */
+    line-height: 100%;
+}
+
+.board_page a.bt {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    /* << 사이 조정 */
+    letter-spacing: -1px;
+}
+
+.board_page a.num {
+    padding-top: 9px;
+    font-size: 1.4rem;
+}
+
+.board_page a.num.on {
+    border-color: #2B65F8;
+    background: #2B65F8 ;
+    color: #fff;
+}
+
+.board_page a:first-child {
+    border-left: 1px solid rgb(208, 207, 207) ;
+}

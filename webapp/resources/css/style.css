@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* color: color-constrast(aquamarine vs pink, yellow, green); */
+/* accent-color: white; */
+
+:root {
+  --color-white: #eee ;
+  --color-light-gray: lightgray;
+  --color-gray: gray;
+  --color-dark-gray: darkslategray;
+
+  --color-skyblue: skyblue;
+  --color-mark-blue: #2B65F8;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, li, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}

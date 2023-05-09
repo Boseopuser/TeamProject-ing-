@@ -1,0 +1,154 @@
+@charset "utf8";
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form input[type=text],
+form input[type=password] {
+  border: none;
+  outline: none;
+
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  margin: auto;
+}
+
+.user-area {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0.3rem 1rem;
+}
+
+.user-area label {
+  width: 5%;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 1.2  rem;
+}
+
+.user-area > input {
+  width: 95%;
+}
+
+/* .loginBtn {
+
+} */
+
+#hr-line {
+  height: 5rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5rem;
+}
+
+#hr-line div {
+  display: inline-block;
+}
+
+.hr-line {
+  height: 1px;
+  width: 100px;
+  vertical-align: middle;
+
+  background-color: var(--color-gray);
+}
+
+.hr-txt {
+  font-size: 1.2rem;
+}
+
+.sns-signin {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sns-signin button {
+  width: 50px;
+  height: 50px;
+
+  cursor: pointer;
+}
+
+#google-signin,
+#naver-signin,
+#kakao-signin {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#google-signin img,
+#naver-signin img,
+#kakao-signin img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* color: color-constrast(aquamarine vs pink, yellow, green); */
+/* accent-color: white; */
+
+:root {
+  --color-white: #eee ;
+  --color-light-gray: lightgray;
+  --color-gray: gray;
+  --color-dark-gray: darkslategray;
+
+  --color-skyblue: skyblue;
+  --color-mark-blue: #2B65F8;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, li, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zerock.myapp.mapper.UsersMapper">
+
+	<insert id="insert">
+		<selectKey keyProperty="userno" order="AFTER" resultType="int">
+			select "ISEQ$$_74653".CURRVAL from dual
+		</selectKey>
+
+		INSERT INTO tbl_users 
+				(id, nickname, name, 
+				password, gender, email, 
+				phonenumber, birthdate, MBTI, likeArea )
+		VALUES (#{ID}, #{nickName}, #{name},
+			#{password}, #{gender}, #{EMail},
+			#{phoneNumber}, #{birthDate}, #{MBTI}, #{likeArea} )
+	</insert>
+
+	<select id="select" resultType="org.zerock.myapp.domain.UsersVO">
+		SELECT *
+		FROM tbl_users
+		WHERE userno = #{userno}
+	</select>
+
+	<delete id="delete">
+		DELETE FROM tbl_users
+		WHERE userno = #{userno}
+	</delete>
+
+	<update id="update">
+		UPDATE tbl_users
+		SET id=#{ID},
+			nickname=#{nickName},
+			name = #{name},
+			password=#{password},
+			email=#{EMail},
+			phoneNumber=#{phoneNumber}
+			<if test="MBTI != null">
+				,MBTI=#{MBTI}
+			</if>
+			<if test="likeArea != null">
+				,likeArea=#{likeArea}
+			</if>
+			
+		WHERE userno = #{userno}
+	</update>
+
+
+
+
+</mapper>
