@@ -38,7 +38,12 @@
   - Password 암호화 ing ~
 
 # BoardReview CRUD 
-  - CRUD 구현 완료 
+  - CRUD 구현 완료 -> Front 작업 ing ~ 
+  - 초기 기초 상태의 게시판 CRUD
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/77f65bff-afb9-4abf-9942-edfc96daafb4)
+
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/dd68891c-b2b5-47be-81a3-788335ad0510)
+
   - 파일업로드 코드 설계 및 갤러리형 이미지 게시판 연동 ING ~ 
   - 갤러리형 게시판
   ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/788cb306-94bf-4e06-9e78-2cd0fa21b295)
