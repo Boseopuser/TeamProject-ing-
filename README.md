@@ -50,6 +50,9 @@
   
   - 수정중 
   ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/7326cf03-d21a-4b7d-97e8-8665becef50f)
+  
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/e87ed966-6171-4ec2-8395-22cdc94b1379)
+
 
 
 # 댓글 CRUD 
