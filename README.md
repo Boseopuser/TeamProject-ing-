@@ -39,11 +39,14 @@
 
 # BoardReview CRUD 
   - CRUD 구현 완료 
-  - 파일업로드 ing ~ 
+  - 파일업로드 코드 설계 및 갤러리형 이미지 게시판 연동 ING ~ 
   - 갤러리형 게시판
   ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/788cb306-94bf-4e06-9e78-2cd0fa21b295)
-
   
+  - 수정중 
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/7326cf03-d21a-4b7d-97e8-8665becef50f)
+
+
 # 댓글 CRUD 
 
 # API 
