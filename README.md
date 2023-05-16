@@ -60,6 +60,22 @@
   
 
 https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/ffb247cf-e113-4e59-8168-3bc692fd6ced
+  
+ - 여행후기 게시판 글 작성 
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/35f43774-e6af-412e-b3ad-00243fb519c7)
+
+ - 상대경로 폴더(년,월,일) 자동 생성 후 이미지 저장 경로 및 이미지 출력 (확장자명 작업중 ~ )
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/55e6849f-4010-4457-9123-be073db96e81)
+
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/bfedcbe7-1d16-419b-9744-146f2bebfc35)
+
+  
+ - 여행후기 게시판 리스트 이미지 출력 테스트 & 새로고침 후 이미지파일 경로 못찾는 에러사항 발생 : 작업중 ~  
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/f83c8a38-b1aa-4b1f-b1be-3336cf00fe0d)
+
+  
+ - 여행후기 상세페이지 이미지 출력  
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/e686775e-4313-4ebe-ba24-d8c43208e45a)
 
 
 
