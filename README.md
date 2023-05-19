@@ -77,8 +77,11 @@ https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/ff
  - 여행후기 상세페이지 이미지 출력  
   ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/e686775e-4313-4ebe-ba24-d8c43208e45a)
 
+ - 
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/73ba1610-ecd6-43a8-a6e9-27117dd46d57)
 
 
+  
 # 댓글 CRUD 
 
 # API 
