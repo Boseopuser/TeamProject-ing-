@@ -77,7 +77,8 @@ https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/ff
  - 여행후기 상세페이지 이미지 출력  
   ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/e686775e-4313-4ebe-ba24-d8c43208e45a)
 
- - 
+ - Tomcat Server tmp0 임시폴더 경로 (Server 재 구동시 이미지 사라짐 현상) -> C드라이브에 자체적인 이미지 업로드 폴더 생성 후 
+   새로고침 및 Server 재 구동시에도 이미지가 사라지지않고 잘 반영되고있다. -> 추후 확장자명 or Base64 공부 및 수정 작업 예정 
   ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/73ba1610-ecd6-43a8-a6e9-27117dd46d57)
 
 
