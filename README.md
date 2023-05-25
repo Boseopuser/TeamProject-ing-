@@ -81,6 +81,17 @@ https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/ff
    새로고침 및 Server 재 구동시에도 이미지가 사라지지않고 잘 반영되고있다. -> 추후 확장자명 or Base64 공부 및 수정 작업 예정 
   ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/73ba1610-ecd6-43a8-a6e9-27117dd46d57)
 
+- 문제 해결 후 화면 
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/81805a1f-115e-4eb8-ae75-f0391ec1b85b)
+
+# 좋아요 
+  
+
+# 프로필 연동
+  
+  
+  
+# 이미지 파일 업로드 추가 작업 (현재 하나의 이미지파일에 대한 저장,출력,경로 으로 되어있기때문에 최대 5개의 이미지 다중파일 준비 필요)
 
   
 # 댓글 CRUD 
