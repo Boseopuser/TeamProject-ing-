@@ -84,6 +84,10 @@ https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/ff
 - 문제 해결 후 화면 
   ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/81805a1f-115e-4eb8-ae75-f0391ec1b85b)
 
+# 상세조회게시글 
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/0ba23702-b947-46ac-9775-1b56949aad43)
+
+  
 # 좋아요 
   
 
@@ -95,6 +99,8 @@ https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/ff
 
   
 # 댓글 CRUD 
+  ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/031fcf36-e0aa-41a8-842b-d41c67d5f625)
+데이터베이스 쿼리문 에러 수정 작업 및 CSS 작업 
 
 # API 
   - 네이버 , 카카오톡 소셜간편로그인 API 연동 
