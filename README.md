@@ -34,6 +34,11 @@
 
 # 동행찾기 Page
   - ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/d96d9dd6-d47b-4d1f-869e-4e48ec93254c)
+  
+  
+# QNA Page
+  - ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/53c23a35-c329-4cb8-ab0c-c80716bc3ff8)
+
 
 
 # Login , Logout , Join
