@@ -32,6 +32,9 @@
 # MainPage
   - ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/74e1dacf-46bb-4ede-9272-92d85e369829)
 
+# 동행찾기 Page
+  - ![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/d96d9dd6-d47b-4d1f-869e-4e48ec93254c)
+
 
 # Login , Logout , Join
   - ID 중복체크 test ing ~
