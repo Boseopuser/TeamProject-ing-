@@ -30,8 +30,7 @@
   - 파일업로드를 통한 갤러리형 이미지 게시판 제작중 
 
 # MainPage
-  - 제작중 ing ~
-  - 스와이프 제외 및 갤러리형 이미지 게시판으로 구현 목표 
+![image](https://github.com/Boseopuser/TeamProject-travel-signal-ing-/assets/128597230/dfb0c7d9-343e-4421-a194-709b3fcf5c47)
 
 # Login , Logout , Join
   - ID 중복체크 test ing ~
